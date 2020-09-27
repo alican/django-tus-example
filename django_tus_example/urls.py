@@ -23,4 +23,4 @@ urlpatterns = [
     path('', DemoClientView.as_view(), name='demo_client'),
     path('upload/', TusUpload.as_view(), name='tus_upload'),
     path('upload/<uuid:resource_id>', TusUpload.as_view(), name='tus_upload_chunks'),
-]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
