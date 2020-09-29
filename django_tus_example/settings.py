@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_tus'
 ]
 
 MIDDLEWARE = [
@@ -128,5 +129,5 @@ STATICFILES_DIRS = [
 TUS_UPLOAD_DIR = os.path.join(BASE_DIR, 'tus_upload')
 TUS_DESTINATION_DIR = os.path.join(BASE_DIR, 'media', 'uploads')
 DATA_UPLOAD_MAX_MEMORY_SIZE = 5242880
-TUS_FILE_NAME_FORMAT = 'increment'  # 'random-suffix', 'random', 'keep' 
-TUS_EXISTING_FILE = 'overwrite'  # 'error', 'rename'
+TUS_FILE_NAME_FORMAT = 'increment'  # 'random-suffix', 'random', 'keep'
+TUS_EXISTING_FILE = 'error'  # 'overwrite'  'error', 'rename'
