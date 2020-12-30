@@ -4,3 +4,7 @@
 db.sqlite3
 
 *.pyc
+
+tus_upload/
+
+media/
