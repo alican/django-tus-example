@@ -1,2 +1,2 @@
 django>=3.0
-django-tus
+git+https://github.com/alican/django-tus@master#egg=django-tus
